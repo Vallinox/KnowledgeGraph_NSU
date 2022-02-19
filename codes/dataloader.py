@@ -43,6 +43,7 @@ class TrainDataset(Dataset):
 
             if len(self.num) <= self.negative_sample_size:
                 negative_sample = self.num
+                print("Si")
             else:
                 negative_sample = np.random.choice(self.num, self.negative_sample_size*2)
 
